@@ -1,36 +1,36 @@
 # ## PUT TERRAFORM CLOUD BLOCK HERE!  ##
 
-# terraform {
-#   cloud {
-#     organization = "abag_tac_live"
+terraform {
+   cloud {
+     organization = "abag_tac_live"
 
-#     workspaces {
-#       name = "tf-cloud-test"
-#     }
-#   }
+     workspaces {
+       name = "tf-cloud-test"
+     }
+   }
   
   
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~> 5.01"
-#     }
-#   }
+   required_providers {
+     aws = {
+       source  = "hashicorp/aws"
+       version = "~> 5.01"
+     }
+   }
 
 
 
-# }
+ }
 
 
-# # Variable blocks directly within the main.tf. No arguments necessary.
-# #variable "aws_access_key" {}
-# #variable "aws_secret_key" {}
-# variable "region" {}
+ # Variable blocks directly within the main.tf. No arguments necessary.
+ #variable "aws_access_key" {}
+ #variable "aws_secret_key" {}
+ variable "region" {}
 
 # # provider arguments call on the variables which then call on terraform.tfvars for the values.
-# provider "aws" {
-#   #access_key = var.aws_access_key
-#   #secret_key = var.aws_secret_key
+ provider "aws" {
+   #access_key = var.aws_access_key
+   #secret_key = var.aws_secret_key
    region     = var.region
 # }
 

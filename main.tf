@@ -46,5 +46,5 @@ terraform {
 #  }
 
  resource "aws_iam_user" "zaur" {
-   name = "user_2"
+   name = "zaur"
  }

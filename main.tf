@@ -48,3 +48,7 @@ terraform {
  resource "aws_iam_user" "zaur" {
    name = "zaur"
  }
+
+  resource "aws_iam_user" "cavad" {
+   name = "cavad"
+ }
